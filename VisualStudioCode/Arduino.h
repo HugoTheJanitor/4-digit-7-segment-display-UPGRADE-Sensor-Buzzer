@@ -1,28 +1,27 @@
-#pragma once
+#ifndef ARDUINO_H
+#define ARDUINO_H
 
-using byte = unsigned char;
+typedef unsigned char byte;
 
-constexpr int LOW = 0;
-constexpr int HIGH = 1;
-constexpr int INPUT = 0;
-constexpr int OUTPUT = 1;
+#define LOW 0
+#define HIGH 1
+#define INPUT 0
+#define OUTPUT 1
 
-constexpr int A1 = 55;
-constexpr int A2 = 56;
-constexpr int A3 = 57;
-constexpr int A4 = 58;
+#define A1 55
+#define A2 56
+#define A3 57
+#define A4 58
 
 void pinMode(int pin, int mode);
 void digitalWrite(int pin, int value);
 void delay(unsigned long milliseconds);
 void delayMicroseconds(unsigned int microseconds);
-unsigned long pulseIn(int pin, int state, unsigned long timeout = 1000000UL);
+unsigned long pulseIn(int pin, int state, unsigned long timeout);
 void tone(int pin, unsigned int frequency);
 void noTone(int pin);
+void serialBegin(unsigned long baudRate);
 
-class HardwareSerial {
-public:
-	void begin(unsigned long baudRate);
-};
+void setSimulatedDistanceMm(int distanceMm);
 
-extern HardwareSerial Serial;
+#endif
