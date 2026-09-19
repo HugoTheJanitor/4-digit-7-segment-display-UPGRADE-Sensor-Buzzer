@@ -22,6 +22,4 @@ void tone(int pin, unsigned int frequency);
 void noTone(int pin);
 void serialBegin(unsigned long baudRate);
 
-void setSimulatedDistanceMm(int distanceMm);
-
 #endif
