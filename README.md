@@ -2,6 +2,10 @@
 
 An Arduino Mega 2560 project that measures distance with an HC-SR04 ultrasonic sensor, displays the result in millimeters, and activates a buzzer when an object is within 200 mm.
 
+## Project Photo
+
+![Arduino Mega distance sensor with 4-digit display and buzzer](Photos/PhotoOfProject.png)
+
 ## Features
 
 - Measures distance with the HC-SR04
@@ -41,6 +45,7 @@ All modules must share a common ground.
 │   ├── Arduino.h
 │   └── Buzzer_display_sensor.cpp
 ├── Photos/
+│   └── PhotoOfProject.png
 ├── .gitignore
 ├── LICENSE
 └── README.md
