@@ -1,0 +1,35 @@
+# Arduino build output
+build/
+*.hex
+*.elf
+*.eep
+*.bin
+*.map
+
+# PlatformIO
+.pio/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+Debug/
+Release/
+x64/
+x86/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*~
